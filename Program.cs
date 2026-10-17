@@ -16,7 +16,11 @@ ArrayHelper arrays = new ArrayHelper();
 
 int[] numbers = { 2, 5, 2, 8, 3 };
 
+<<<<<<< HEAD
 Console.WriteLine(arrays.GetSum(numbers));
+=======
+Console.WriteLine($"The sum of the array is: {arrays.GetSum(numbers)}");
+>>>>>>> cb7cbd7 (Implement GetSum)
 Console.WriteLine(arrays.GetMax(numbers));
 Console.WriteLine(arrays.CountOccurrences(numbers, 3));
 Console.WriteLine(arrays.Contains(numbers, 3));

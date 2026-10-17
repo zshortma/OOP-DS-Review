@@ -1,0 +1,5 @@
+/workspaces/OOP-DS-Review/obj/Release/net10.0/OOP-DS-Review.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/OOP-DS-Review/obj/Release/net10.0/OOP-DS-Review.AssemblyInfoInputs.cache
+/workspaces/OOP-DS-Review/obj/Release/net10.0/OOP-DS-Review.AssemblyInfo.cs
+/workspaces/OOP-DS-Review/obj/Release/net10.0/OOP-DS-Review.csproj.CoreCompileInputs.cache
+/workspaces/OOP-DS-Review/obj/Release/net10.0/OOP-DS-Review.sourcelink.json

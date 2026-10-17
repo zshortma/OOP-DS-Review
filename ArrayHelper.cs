@@ -2,10 +2,17 @@ public class ArrayHelper
 {
     public int GetSum(int[] numbers)
     {
+<<<<<<< HEAD
         int count;
         int i = 0;
         // TODO: Add every number
         while( i <= numbers.count ){
+=======
+        int count = 0;
+        int i = 0;
+        
+        while( i < numbers.Count() ){
+>>>>>>> cb7cbd7 (Implement GetSum)
 
             count += numbers[i];
             i++;
