@@ -1,0 +1,15 @@
+/workspaces/OOP-DS-Review/bin/Debug/net10.0/OOP-DS-Review
+/workspaces/OOP-DS-Review/bin/Debug/net10.0/OOP-DS-Review.deps.json
+/workspaces/OOP-DS-Review/bin/Debug/net10.0/OOP-DS-Review.runtimeconfig.json
+/workspaces/OOP-DS-Review/bin/Debug/net10.0/OOP-DS-Review.dll
+/workspaces/OOP-DS-Review/bin/Debug/net10.0/OOP-DS-Review.pdb
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/OOP-DS-Review.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/OOP-DS-Review.AssemblyInfoInputs.cache
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/OOP-DS-Review.AssemblyInfo.cs
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/OOP-DS-Review.csproj.CoreCompileInputs.cache
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/OOP-DS-Review.sourcelink.json
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/OOP-DS-Review.dll
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/refint/OOP-DS-Review.dll
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/OOP-DS-Review.pdb
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/OOP-DS-Review.genruntimeconfig.cache
+/workspaces/OOP-DS-Review/obj/Debug/net10.0/ref/OOP-DS-Review.dll
