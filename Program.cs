@@ -23,3 +23,13 @@ Console.WriteLine($"How many times: {arrays.CountOccurrences(numbers, 8)}");
 Console.WriteLine($"How many times: {arrays.CountOccurrences(numbers, 0)}");
 Console.WriteLine($"Number in this array: {arrays.Contains(numbers, 3)}");
 Console.WriteLine($"Number in this array: {arrays.Contains(numbers, 9)}");
+
+Console.WriteLine($"Index of 5: {arrays.GetIndex(numbers, 5)}");
+Console.WriteLine($"Index of 2: {arrays.GetIndex(numbers, 2)}");
+Console.WriteLine($"Index of 9: {arrays.GetIndex(numbers, 9)}");
+
+Console.WriteLine($"array with no duplicates: {string.Join(", ", arrays.RemoveDuplicates(numbers))}");
+
+Console.WriteLine($"Odd values: {arrays.CountOdd(numbers)}");
+Console.WriteLine($"Amount greater than: {arrays.CountGreaterThan(numbers, 2)}");
+

@@ -46,4 +46,57 @@ public class ArrayHelper
         }
         return false;
     }
+
+    public int GetIndex(int[] numbers, int target)
+    {
+        for(int i= 0; i< numbers.Length; i++)
+        {
+            if(numbers[i] == target)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int[] RemoveDuplicates(int[] numbers)
+    {
+        List<int> result = new List<int>();
+
+        for(int i=0; i < numbers.Length; i++)
+        {
+            if(!result.Contains(numbers[i]))
+            {
+                result.Add(numbers[i]);
+            }
+        }
+
+        return result.ToArray();
+    }
+
+    public int CountGreaterThan(int[] numbers, int index)
+    {
+        int counter = 0;
+        for(int i = 0; i<numbers.Length; i++)
+        {
+            if(numbers[i] > index)
+            {
+                counter++;
+            }
+        }
+        return counter;
+    }
+
+    public int CountOdd(int[] numbers)
+    {
+        int tracker = 0;
+        for(int i =0; i< numbers.Length; i++)
+        {
+            if(!(numbers[i] % 2 == 0))
+            {
+                tracker++;
+            }
+        }
+        return tracker;
+    }
 }
