@@ -33,3 +33,6 @@ Console.WriteLine($"array with no duplicates: {string.Join(", ", arrays.RemoveDu
 Console.WriteLine($"Odd values: {arrays.CountOdd(numbers)}");
 Console.WriteLine($"Amount greater than: {arrays.CountGreaterThan(numbers, 2)}");
 
+int[] numbers2 = { 2,7,11,15 };
+Console.WriteLine($"nums = [2,7,11,15], target = 9 {string.Join(", ",arrays.TwoSum(numbers2, 9))}");
+
