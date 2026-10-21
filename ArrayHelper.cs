@@ -116,4 +116,36 @@ public class ArrayHelper
         return [];
         
     }
+
+    public int RemoveDuplicates_Two(int[] nums)
+    {
+     if(nums.Length ==0) return 0;
+        
+        int i = 0;
+        
+        for(int j = 1; j<nums.Length; j++){
+            if(nums[j] != nums[i]){
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i+1; 
+    }
+
+        public int[] FindDegrees(int[][] matrix) {
+        
+        if(matrix == null) return [0];
+        List<int> total = new List<int>();
+        foreach(int[] matri in matrix){
+            int sum = 0;
+            for(int i =0; i<matri.Length; i++)
+            {
+               sum += matri[i];
+            }
+
+            total.Add(sum);
+        }
+
+        return total.ToArray();
+    }
 }
