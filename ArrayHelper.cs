@@ -174,4 +174,25 @@ public class ArrayHelper
         return total - interations;
     }
 
+    // 3925. Concatenate Array With Reverse
+    public int[] ConcatWithReverse(int[] nums) {
+        
+        if(nums == null) return [];
+
+        int[] result = new int[nums.Length * 2];
+
+        for(int i=0; i < nums.Length; i++) {
+            result[i] = nums[i];
+        }
+
+        Array.Reverse(nums);
+
+        for(int i = nums.Length; i < result.Length; i++) {
+            result[i] = nums[i - (nums.Length)];
+        }
+
+        return result;
+    }
+
+
 }
