@@ -36,3 +36,13 @@ Console.WriteLine($"Amount greater than: {arrays.CountGreaterThan(numbers, 2)}")
 int[] numbers2 = { 2,7,11,15 };
 Console.WriteLine($"nums = [2,7,11,15], target = 9 {string.Join(", ",arrays.TwoSum(numbers2, 9))}");
 
+ListHelper listHelper = new ListHelper();
+Console.WriteLine($"Sum of [2, 3, 4]: {listHelper.GetSum(new List<int> { 2, 3, 4 })}"); // 9
+Console.WriteLine($"Sum of [5, 5]: {listHelper.GetSum(new List<int> { 5, 5 })}");    // 10
+
+Console.WriteLine($"Contains 7: {listHelper.ContainsNumber(new List<int> { 3, 7, 9 }, 7)}"); // true
+Console.WriteLine($"Contains 2: {listHelper.ContainsNumber(new List<int> { 3, 7, 9 }, 2)}");
+
+Console.WriteLine($"Largest in [4, 9, 2, 6]: {listHelper.FindLargest(new List<int> { 4, 9, 2, 6 })}"); // 9
+Console.WriteLine($"Largest in [-5, -2, -8]: {listHelper.FindLargest(new List<int> { -5, -2, -8 })}"); // -2
+
