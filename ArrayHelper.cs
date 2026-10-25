@@ -148,4 +148,30 @@ public class ArrayHelper
 
         return total.ToArray();
     }
+
+
+        // 3512: Minimum Operations to Make Array Sum Divisible by K
+        public int MinOperations(int[] nums, int k) {
+        
+        int interations = 0;
+
+        while(getSum(nums, interations) % k != 0)
+        {
+            interations++;
+        }
+
+        return interations;
+
+    }
+
+    public int getSum(int[] nums, int interations) {
+        int total = 0;
+
+        for(int i = 0; i < nums.Length; i++) {
+            total += nums[i];
+        }
+
+        return total - interations;
+    }
+
 }
