@@ -39,4 +39,41 @@ public class ListHelper
 
     return largest;
     }
+ 
+    public int CountGreaterThan(List<int> nums, int target)
+    {
+        int count = 0;
+        foreach(int num in nums)
+        {
+            if(num > target)
+            {
+                count++;
+            }
+        } 
+        return count;
+    }
+
+    public List<int> ReverseList(List<int> nums)
+    {
+        List<int> result = [];
+        for(int i = nums.Count -1; i >= 0; i--)
+        {
+            result.Add(nums[i]);
+        }
+        return result;
+    }
+
+    public List<int> RemoveDuplicates(List<int> nums)
+    {
+        List<int> result = [];
+        foreach(int num in nums)
+        {
+            if(!result.Contains(num))
+            {
+                result.Add(num);
+            }
+        }
+        return result;
+    }
+
 }

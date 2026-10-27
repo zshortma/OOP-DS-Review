@@ -46,3 +46,6 @@ Console.WriteLine($"Contains 2: {listHelper.ContainsNumber(new List<int> { 3, 7,
 Console.WriteLine($"Largest in [4, 9, 2, 6]: {listHelper.FindLargest(new List<int> { 4, 9, 2, 6 })}"); // 9
 Console.WriteLine($"Largest in [-5, -2, -8]: {listHelper.FindLargest(new List<int> { -5, -2, -8 })}"); // -2
 
+Console.WriteLine($"Count of numbers greater than 5 in [1, 3, 5, 7, 9]: {listHelper.CountGreaterThan(new List<int> { 1, 3, 5, 7, 9 }, 5)}"); // 2
+Console.WriteLine($"Reversed [1, 2, 3]: {string.Join(", ", listHelper.ReverseList(new List<int> { 1, 2, 3 }))}"); // [3, 2, 1]
+Console.WriteLine($"Duplicates removed [2, 3, 2, 4, 3]: {string.Join(", ", listHelper.RemoveDuplicates(new List<int> {2, 3, 2, 4, 3}))}"); // [2, 3, 4]

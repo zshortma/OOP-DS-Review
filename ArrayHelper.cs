@@ -194,5 +194,18 @@ public class ArrayHelper
         return result;
     }
 
+    // 1920. Build Array from Permutation
+    public int[] BuildArray(int[] nums) {
+
+        if(nums == null) return [];
+        int[] result = new int[nums.Length];
+
+        for(int i = 0; i< nums.Length; i++){
+            result[i] = nums[nums[i]];
+        }
+
+        return result;
+    }
+
 
 }
