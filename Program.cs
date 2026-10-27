@@ -49,3 +49,7 @@ Console.WriteLine($"Largest in [-5, -2, -8]: {listHelper.FindLargest(new List<in
 Console.WriteLine($"Count of numbers greater than 5 in [1, 3, 5, 7, 9]: {listHelper.CountGreaterThan(new List<int> { 1, 3, 5, 7, 9 }, 5)}"); // 2
 Console.WriteLine($"Reversed [1, 2, 3]: {string.Join(", ", listHelper.ReverseList(new List<int> { 1, 2, 3 }))}"); // [3, 2, 1]
 Console.WriteLine($"Duplicates removed [2, 3, 2, 4, 3]: {string.Join(", ", listHelper.RemoveDuplicates(new List<int> {2, 3, 2, 4, 3}))}"); // [2, 3, 4]
+
+Console.WriteLine($"Find smallest in the list [9, 1, 3, 5, 7, 9]: {listHelper.FindSmallest(new List<int> { 9, 1, 3, 5, 7, 9 })}"); // 1
+Console.WriteLine($"Count Even Numbers [1, 2, 3]: {listHelper.CountEven(new List<int> { 1, 2, 3 })}"); // 1
+Console.WriteLine($"Get list that is less than 3,  [2, 3, 2, 4, 3]: {string.Join(", ", listHelper.GetLessThan(new List<int> {2, 3, 2, 4, 3}, 3))}"); // [2, 3, 4]

@@ -1,62 +1,64 @@
+using System.Diagnostics.Metrics;
+
 public class ListHelper
 {
     public int GetSum(List<int> nums)
     {
-    int sum = 0;
+        int sum = 0;
 
-    foreach (int number in nums)
-    {
-        sum += number;
+        foreach (int number in nums)
+        {
+            sum += number;
+        }
+
+        return sum;
     }
 
-    return sum;
-    }
-    
     public bool ContainsNumber(List<int> nums, int target)
     {
-    foreach (int number in nums)
-    {
-        if (number == target)
+        foreach (int number in nums)
         {
-            return true;
+            if (number == target)
+            {
+                return true;
+            }
         }
-    }
 
-    return false;
+        return false;
     }
 
     public int FindLargest(List<int> nums)
     {
-    int largest = nums[0];
+        int largest = nums[0];
 
-    foreach (int number in nums)
-    {
-        if (number > largest)
+        foreach (int number in nums)
         {
-            largest = number;
+            if (number > largest)
+            {
+                largest = number;
+            }
         }
+
+        return largest;
     }
 
-    return largest;
-    }
- 
     public int CountGreaterThan(List<int> nums, int target)
     {
         int count = 0;
-        foreach(int num in nums)
+        foreach (int num in nums)
         {
-            if(num > target)
+            if (num > target)
             {
                 count++;
             }
-        } 
+        }
         return count;
     }
 
     public List<int> ReverseList(List<int> nums)
     {
         List<int> result = [];
-        for(int i = nums.Count -1; i >= 0; i--)
+        for (int i = nums.Count - 1; i >= 0; i--)
         {
             result.Add(nums[i]);
         }
@@ -66,9 +68,9 @@ public class ListHelper
     public List<int> RemoveDuplicates(List<int> nums)
     {
         List<int> result = [];
-        foreach(int num in nums)
+        foreach (int num in nums)
         {
-            if(!result.Contains(num))
+            if (!result.Contains(num))
             {
                 result.Add(num);
             }
@@ -76,4 +78,44 @@ public class ListHelper
         return result;
     }
 
+    public int FindSmallest(List<int> nums)
+    {
+        if (nums.Count == 0) { return 0; }
+        int k = nums[0];
+
+        for (int i = 0; i < nums.Count; i++)
+        {
+            if (nums[i] < k)
+            {
+                k = nums[i];
+            }
+        }
+        return k;
+    }
+
+    public int CountEven(List<int> nums)
+    {
+        int counter = 0;
+        foreach (int num in nums)
+        {
+            if (num % 2 == 0)
+            {
+                counter++;
+            }
+        }
+
+        return counter;
+    }
+
+    public List<int> GetLessThan(List<int> nums, int target)
+    {
+        for (int i = 0; i < nums.Count(); i++)
+        {
+            if (nums[i] > target)
+            {
+                nums.Remove(nums[i]);
+            }
+        }
+        return nums;
+    }
 }
