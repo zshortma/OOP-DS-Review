@@ -207,5 +207,25 @@ public class ArrayHelper
         return result;
     }
 
+    // 3190. Find Minimum Operations to Make All Elements Divisible by Three
+      public int MinimumOperations(int[] nums) {
+
+        int interations = 0;
+
+        foreach(int num in nums)
+        {
+            int copyAdd = num;
+            int copySub = num;
+            while(copySub % 3 != 0 && copyAdd % 3 != 0)
+            {
+                copyAdd = copyAdd + 1;
+                copySub = copySub - 1;
+                interations++;
+            } 
+        }
+        
+        return interations;
+    }
+
 
 }

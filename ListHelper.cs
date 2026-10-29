@@ -118,4 +118,29 @@ public class ListHelper
         }
         return nums;
     }
+
+        /* 
+        876. Middle of the Linked List
+        public ListNode MiddleNode(ListNode head) {
+
+        int counter = 1;
+
+        ListNode countCopy = head;
+        while(countCopy.next != null) {
+            counter++;
+            countCopy = countCopy.next;
+        }
+
+        if(counter % 2 == 0) counter++;
+        counter = counter / 2 ;
+
+        while(counter != 0) {
+           head = head.next; 
+           counter--;
+        }
+
+        return head;
+    }
+
+    */
 }
