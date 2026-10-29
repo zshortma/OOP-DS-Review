@@ -142,5 +142,18 @@ public class ListHelper
         return head;
     }
 
+    // Try again
+    1290. Convert Binary Number in a Linked List to Integer
+    public int GetDecimalValue(ListNode head) {
+
+        string sum = "";
+        while(head != null){
+            sum += head.val;
+            head = head.next;
+        }
+        return Convert.ToInt32(sum,2);
+    }
     */
+
+
 }
