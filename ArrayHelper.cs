@@ -251,4 +251,21 @@ public class ArrayHelper
         return nums;
     }
 
+    // 2011. Final Value of Variable After Performing Operations
+    public int FinalValueAfterOperations(string[] operations) {
+        
+        int value = 0;
+        foreach(string op in operations){
+
+            if(op.Contains("-")){
+                value -= 1;
+            }
+            if(op.Contains("+")){
+                value += 1;
+            }
+        }
+
+        return value;
+    }
+
 }

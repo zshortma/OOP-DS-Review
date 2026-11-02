@@ -155,5 +155,23 @@ public class ListHelper
     }
     */
 
+        // 3110. Score of a String
+        public int ScoreOfString(string s) {
+        
+        s.ToCharArray();
+        int[] total = new int[s.Length];
+        int result = 0;
+
+        for(int i = 1; i<s.Length; i++){
+            total[i] = Math.Abs((int)s[i] - (int)s[i-1]);
+        }
+
+        foreach(int num in total){
+            result += num;
+        }
+
+        return result;
+    }
+
 
 }
