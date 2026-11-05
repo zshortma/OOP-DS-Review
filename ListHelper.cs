@@ -153,6 +153,22 @@ public class ListHelper
         }
         return Convert.ToInt32(sum,2);
     }
+
+        //141. Linked List Cycle
+        public bool HasCycle(ListNode head) {
+        ListNode i = head;
+        ListNode j = head;
+        // index of the node that tail's next pointer is connected to
+        while(i != null && i.next != null){
+            i = i.next.next;
+            j = j.next;
+            if(i == j){
+                return true;
+            }
+        }
+
+        return false;
+    }
     */
 
         // 3110. Score of a String
