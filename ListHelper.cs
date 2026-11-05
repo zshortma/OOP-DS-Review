@@ -173,5 +173,18 @@ public class ListHelper
         return result;
     }
 
+        // 3498. Reverse Degree of a String
+        public int ReverseDegree(string s) {
+
+        int runningTotal = 0;
+
+        for(int i = 0; i<s.Length; i++){
+
+           runningTotal += ('z' - s[i] + 1) * (i + 1);
+        }
+
+        return runningTotal;
+    }
+
 
 }
