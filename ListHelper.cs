@@ -202,5 +202,23 @@ public class ListHelper
         return runningTotal;
     }
 
+    // 2942. Find Words Containing Character
+        public IList<int> FindWordsContaining(string[] words, char x) {
+        
+        IList<int> validList = [];
+        int position = 0;
+
+        foreach (string word in words)
+        {
+            if(word.Contains(x)){
+              validList.Add(position);
+            }
+
+            position++;
+        }
+
+        return validList;
+    }
+
 
 }
