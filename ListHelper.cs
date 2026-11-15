@@ -220,5 +220,41 @@ public class ListHelper
         return validList;
     }
 
+    // 1108. Defanging an IP Address
+    public string DefangIPaddr(string address) {
+        return address.Replace(".", "[.]");
+    }
+
+    // 3541. Find Most Frequent Vowel and Consonant
+    public int MaxFreqSum(string s) {
+        // Define Vowel range
+        List<char> vowelRange =  ['a', 'e', 'i', 'o', 'u'];
+
+        int MaxVowel = 0;
+        int MaxConst = 0;
+        // find with voewl occurs in string the most store num of occurance
+        foreach(char letter in vowelRange){
+            int occ = s.Count(c=> c == letter);
+            if(occ > MaxVowel) MaxVowel = occ;
+        }
+
+        //Determine constants
+
+    foreach (char letter in s)
+    {
+        if (!vowelRange.Contains(letter))
+        {
+            int occ = s.Count(c => c == letter);
+
+            if (occ > MaxConst){
+                MaxConst = occ;
+            }
+        }
+    }
+        //Find constant that occurs the most and store num of occurence
+
+        // return the sum of the occurnaces
+        return MaxVowel + MaxConst;
+    }
 
 }
