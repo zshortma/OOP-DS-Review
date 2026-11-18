@@ -257,4 +257,23 @@ public class ListHelper
         return MaxVowel + MaxConst;
     }
 
+    // 3794. Reverse String Prefix
+        public string ReversePrefix(string s, int k) {
+        char[] reversed = new char[s.Length];
+        int i = 0;
+        int j = k-1;
+
+        while(i < s.Length){
+            if(i < k){
+                reversed[j] = s[i];
+                j--; 
+            } else {
+                reversed[i] = s[i];
+            }
+
+            i++;
+        }
+        return new string(reversed);
+    }
+
 }
