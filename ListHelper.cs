@@ -276,4 +276,31 @@ public class ListHelper
         return new string(reversed);
     }
 
+    // 3798. Largest Even Number (Review)
+    public string LargestEven(string s) {
+        for(int i = s.Length-1; i>=0; i--){
+            if((s[i]-'0') % 2 == 0){
+                return s.Substring(0, i+1);
+            }
+        }
+        return "";
+    }
+
+    // 1684. Count the Number of Consistent Strings
+        public int CountConsistentStrings(string allowed, string[] words) {
+        int count = 0;
+
+        foreach( string s in words){
+            int track = 0;
+
+            while(track <= s.Length-1 && allowed.Contains(s[track])){
+                track++;
+            }
+            if(track == s.Length) count++;
+            
+        }
+
+        return count;
+    }
+
 }
