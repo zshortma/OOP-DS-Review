@@ -303,4 +303,29 @@ public class ListHelper
         return count;
     }
 
+
+        public string RemoveOuterParentheses(string s) {
+    StringBuilder result = new StringBuilder();
+    int count = 0;
+
+        for(int i=0; i<s.Length; i++){
+
+        if(s[i] == '('){
+            if(count > 0){
+                result.Append('(');
+            }
+            count++;
+        }
+        else {
+            count--;
+
+            if(count > 0){
+                result.Append(')');
+            }
+        }
+
+        }
+        return result.ToString();
+    }
+
 }
